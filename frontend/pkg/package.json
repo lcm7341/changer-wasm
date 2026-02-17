@@ -1,0 +1,17 @@
+{
+  "name": "changer-wasm",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "changer_wasm_bg.wasm",
+    "changer_wasm.js",
+    "changer_wasm_bg.js",
+    "changer_wasm.d.ts"
+  ],
+  "main": "changer_wasm.js",
+  "types": "changer_wasm.d.ts",
+  "sideEffects": [
+    "./changer_wasm.js",
+    "./snippets/*"
+  ]
+}
