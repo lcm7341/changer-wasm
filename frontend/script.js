@@ -27,12 +27,10 @@ function refresh(result) {
 
     for (const [name, arr] of Object.entries(result.bills)) {
       if (name == bill_order[bill_order_id]) {
-        let count = arr[0]
-        let value = arr[1]
+        let count = arr
         for (let i = 0; i < count; i++) {
           const img = document.createElement("img");
           img.setAttribute("src", `currencies/${name}.png`);
-          img.id = value;
           img.width = 261;
           img.height = 100;
           bills.appendChild(img);
@@ -47,8 +45,7 @@ function refresh(result) {
 
     for (const [name, arr] of Object.entries(result.coins)) {
       if (name == coin_order[coin_order_id]) {
-        let count = arr[0]
-        let value = arr[1]
+        let count = arr
         for (let i = 0; i < count; i++) {
           let size = 50;
           if (name === "dimes" || name === "pennies") size *= 0.3;
@@ -56,7 +53,6 @@ function refresh(result) {
 
           const img = document.createElement("img");
           img.setAttribute("src", `currencies/${name}.png`);
-          img.id = value;
           img.width = size;
           img.height = size;
           coins.appendChild(img)
