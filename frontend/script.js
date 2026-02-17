@@ -1,4 +1,4 @@
-import init, { Transaction, calculate_change } from "../pkg/changer_wasm.js"
+import init, { Transaction, calculate_change } from "./pkg/changer_wasm.js"
 
 await init();
 
